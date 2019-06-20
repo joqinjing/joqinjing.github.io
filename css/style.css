@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+a:link {color: black}
+a:visited {color: black} 
+.bodydiv{
+	width:1347px;
+	margin:0 auto;
+}
+.autodiv{
+	width:1144px;
+	margin:0 auto;
+}
+/*头部开始*/
+.head_select{
+	width:1349px;
+	height:120px;
+	position: fixed;
+	background: #fff;
+	z-index: 99;	
+}
+.head_img{
+	width:119px;
+	heigh:120px;
+	margin-left:83px;
+}
+.head_ul{
+	float: right;
+	margin-top:40px;
+	margin-right: 145px;
+}
+.head_li{
+	float:left;
+	list-style: none;
+	margin-left: 66px;
+}
+/*名字开始*/
+.myName{
+	padding-top: 250px;
+	height:600px;
+}
+.myName h2{
+	font-size:35px;
+	text-align: center;
+}
+.myName span{
+	color:#a1e79e;
+}
+.myName h1{
+	font-size:80px;
+	letter-spacing:15px;
+	text-align: center;
+}
+.myName h5{
+	letter-spacing:3px;/*行距*/
+	text-align: center;
+}
+/*画图形*/
+.circle{
+	position: absolute;
+}
+.circle1{
+    border: 20px solid rgba(12, 191, 0, 0.3803921568627451);
+    top: 51%;
+    left: 26%;
+    border-radius: 50%;/*圆角角度*/
+}
+.circle1:before{
+	content: "";
+    position: absolute;
+    left: -29px;
+    top: -29px;
+    bottom: -29px;
+    right: -29px;
+	border: 3px solid rgba(12, 191, 0, 0.3803921568627451);
+    border-radius: 50%;/*圆的弧度*/v
+    -webkit-animation: circle1 2s cubic-bezier(.23, 1, .32, 1) both infinite;
+    animation: circle1 2s cubic-bezier(.23, 1, .32, 1) both infinite;
+}
+@keyframes circle1{
+	0% {transform:scale(0.7);opacity:1;}
+	100% {transform:scale(1.2);opacity:0;}
+}
+@-webkit-keyframes circle1 /*Safari and Chrome*/
+{
+	0% {transform:scale(0.7);opacity:1;}
+	100% {transform:scale(1.2);opacity:0;}
+}
+.circle2{
+	left: 86%;
+    top: 25%;
+    border-right: 30px solid rgb(255, 123, 123);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+	transform:rotate(50deg);
+	-ms-transform:rotate(50deg); /* Internet Explorer */
+	-moz-transform:rotate(50deg); /* Firefox */
+	-webkit-transform:rotate(50deg); /* Safari 和 Chrome */
+	-o-transform:rotate(50deg); /* Opera */
+}
+.circle2:before{
+	content: "";
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    border: 3px solid rgb(255, 123, 123);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;/*圆的弧度*/
+    -webkit-animation: circle2 2.5s linear 0s infinite;
+    animation: circle2 2.5s linear 0s infinite;
+}
+@keyframes circle2{
+	from {width:0px;height:0px;opacity:1;}
+	to {width:20px;height:20px;opacity:0;}
+}
+@-webkit-keyframes circle2 /*Safari and Chrome*/
+{
+	from {width:0px;height:0px;opacity:1;}
+	to {width:20px;height:20px;opacity:0;}
+}
+.circle3{
+	left: 40%;
+    top: 35%;
+    border-right: 30px solid rgb(33, 150, 243);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+	transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg); /* Internet Explorer */
+	-moz-transform:rotate(-10deg); /* Firefox */
+	-webkit-transform:rotate(-10deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-10deg); /* Opera */
+}
+.circle4{
+	left: 52%;
+    top: 75%;
+    border-right: 30px solid rgb(238, 149, 255);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+	transform:rotate(-10deg);/*旋转角度*/
+	-ms-transform:rotate(-10deg); /* Internet Explorer */
+	-moz-transform:rotate(-10deg); /* Firefox */
+	-webkit-transform:rotate(-10deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-10deg); /* Opera */
+}
+.circle4:before{
+	content: "";
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    border: 3px solid rgb(238, 149, 255);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;/*圆的弧度*/
+    -webkit-animation: circle4 2.5s linear 0s infinite;
+    animation: circle4 2.5s linear 0s infinite;
+}
+@keyframes circle4{
+	from {width:0px;height:0px;opacity:1;}
+	to {width:20px;height:20px;opacity:0;}
+}
+@-webkit-keyframes circle4 /*Safari and Chrome*/
+{
+	from {width:0px;height:0px;opacity:1;}
+	to {width:20px;height:20px;opacity:0;}
+}
+.circle5{
+    border: 20px solid rgba(254, 193, 7, 0.3803921568627451);
+    top: 20%;
+    left: 14%;
+    border-radius: 50%;/*圆角角度*/
+}
+.circle6{
+    border: 20px solid rgba(150, 223, 255, 0.3803921568627451);
+    top: 75%;
+    left: 80%;
+}
+.aboutMe{
+	height:720px;
+	background: rgb(244,245,249);
+}
+/*关于我开始*/
+.myh1{
+	padding-top: 70px;
+	text-align: center;	
+	letter-spacing:3px;
+}
+.aboutMe_school{
+	float: left;
+	width:517px;
+	height:603px;
+	padding-top: 80px;
+}
+.aboutMe_school_schp{
+	letter-spacing:3px;
+	margin-left: 83px;
+	margin-bottom: 54px;
+	width:400px;
+	line-height:30px;
+}
+
+.aboutMe_school_phoneEmail p{
+	float:left;
+	letter-spacing:3px;
+	margin-left: 83px;
+}
+.aboutMe_img{
+	margin-top: 120px;
+	
+}
+.aboutMe_img img{
+	margin-left: 150px;
+	float: left;
+	width: 343px;
+	height:420px;
+}
+/*特长开始*/
+.skill{
+	height:620px;
+}
+.skill h1{
+	padding-top: 70px;
+	letter-spacing:3px;
+}
+.skill_colbagr{
+	text-align: center;
+}
+.skill_cla{
+	margin-top:113px;
+	margin-left: 90px;
+}
+.backcolor{
+	float: left;
+	height:19px;
+	border-radius: 10px;
+	background: rgb(161,231,158);
+}
+.skill_box1{
+	float:left;
+	margin-right: 48px;
+	margin-bottom: 125px;
+}
+.a{
+	margin-bottom: -18px;
+	width:469px;
+	height:19px;
+	border-radius: 10px;
+}
+.skill_colbagr_probar{
+	width:469px;
+	height:19px;
+	border-radius: 10px;
+	background: rgb(143,144,146);
+}
+.skill_colbagr_baground1{
+	width:0px;
+}
+.skill_colbagr_baground2{
+	width:0px;/*344*/
+}
+.skill_colbagr_baground3{
+	width:0px;/*294*/
+}
+.skill_colbagr_baground4{
+	width:0px;/*239*/
+}
+/*兴趣爱好开始*/
+.hobby{
+	width:1137px;
+	height:700px;
+	background: rgb(244,245,249);
+}
+
+.hobby_box{
+	padding-top: 75px;
+	margin: 0 auto;
+	width:940px;
+	height:375px;
+}
+.hobby_box_cla{
+	list-style: none;
+	float: left;
+	width:164px;
+	height:164px;
+	margin: 0 46px 86px 0;
+	background: #fff;
+	
+}
+.hobby_box_cla_auto{
+	width: 100px;
+	height:100px;
+	padding-top:26px;
+	margin: 0 auto;
+	text-align: center;
+}
+.hobby_box_cla p{
+	width:100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.coninf{
+	width:1140px;
+	height:346px;
+}
+.coninf_box1{
+	width:1000px;
+	height:67px;
+	margin:0 auto;
+}
+.coninf_box2{
+	float: left;
+	margin:0 78px 0 103px;
+}
+.coninf_box2 h3{
+	color:rgb(142,141,139);
+}
